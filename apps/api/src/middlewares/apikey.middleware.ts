@@ -1,4 +1,4 @@
-import { NextFunction, Response, Request } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import { API_KEY } from '../consts/settings';
 
 export function apiKey(req: Request, res: Response, next: NextFunction) {
