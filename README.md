@@ -119,6 +119,7 @@ npm run build -- --filter=docs
 
 ## 🤝 Соглашения
 
+- Ознакомьтесь с [CONTRIBUTING.md](./CONTRIBUTING.md) — в нём описаны лучшие практики по работе с монорепозиторием.
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) (`feat:`, `fix:`, `docs:` …).
 - Ветки: `feature/*`, `bugfix/*`, `chore/*`, `docs/*`, `release/*`.
 - Перед созданием PR прогоняйте `npm run lint && npm run test`.
