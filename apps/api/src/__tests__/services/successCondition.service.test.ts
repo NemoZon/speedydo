@@ -1,11 +1,6 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-// TODO: после реализации SuccessConditionService удалить коментарии выше
-
 import { Types } from 'mongoose';
 import { SuccessCondition } from '../../models/SuccessCondition.model';
-// TODO: после реализации SuccessConditionService раскомментировать import ниже
-// import { SuccessConditionService } from '../../services/successCondition.service';
+import { SuccessConditionService } from '../../services/successCondition.service';
 
 jest.mock('../../models/SuccessCondition.model', () => ({
   SuccessCondition: {
@@ -16,8 +11,7 @@ jest.mock('../../models/SuccessCondition.model', () => ({
   },
 }));
 
-// TODO: заменить "describe.skip(..." на "describe(..."
-describe.skip('SuccessConditionService', () => {
+describe('SuccessConditionService', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
