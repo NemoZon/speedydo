@@ -14,6 +14,21 @@ const invalidText = '#C40000';
 const readOnlyBg = '#333333';
 const readOnlyText = '#AAAAAA';
 
+const greenLight = '#00992B';
+const greenDark = '#005017';
+
+const blue = '#9FB7FF';
+
+const redLight = '#FF5858';
+
+const red = '#CF0000';
+
+const redDark = '#830000';
+
+const black = '#000000';
+
+const white = '#FFFFFF';
+
 const colors = {
   primary,
   primary10: hexToRgba(primary, 0.1),
@@ -51,6 +66,29 @@ const colors = {
   readOnlyText,
 
   readOnlyBg30: hexToRgba(readOnlyBg, 0.3),
+
+  greenLight,
+  greenLight30: hexToRgba(greenLight, 0.3),
+
+  greenDark,
+  greenDark30: hexToRgba(greenDark, 0.3),
+
+  blue,
+  blue30: hexToRgba(blue, 0.3),
+
+  redLight,
+  redLight30: hexToRgba(redLight, 0.3),
+
+  red,
+  red30: hexToRgba(red, 0.3),
+
+  redDark,
+  redDark30: hexToRgba(redDark, 0.3),
+
+  black,
+  black30: hexToRgba(black, 0.3),
+
+  white,
 } as const;
 
 export default colors;

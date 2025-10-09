@@ -28,7 +28,7 @@ const TextInput = ({
   isDisabled = false,
   isInvalid = false,
   isReadOnly = false,
-  placeholder = 'hbh',
+  placeholder = '',
   startComponent,
   endComponent,
 }: TextInputProps) => {

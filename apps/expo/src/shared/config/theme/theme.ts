@@ -1,7 +1,7 @@
 import { createTheme } from '@shopify/restyle';
 import colors from './colors';
-import textVariants from './typography';
 import spacing from './spacing';
+import textVariants from './typography';
 
 export const theme = createTheme({
   colors: colors,
@@ -13,8 +13,8 @@ export const darkTheme = createTheme({
   ...theme,
   colors: {
     ...theme.colors,
-    background: '#000',
-    text: '#fff',
+    background: theme.colors.black,
+    text: theme.colors.white,
   },
 });
 
