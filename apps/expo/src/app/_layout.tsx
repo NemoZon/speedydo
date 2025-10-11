@@ -13,7 +13,7 @@ export default function RootLayout() {
       <Box backgroundColor="secondary" flex={1}>
         <Slot />
       </Box>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
     </ThemeProvider>
   );
 }

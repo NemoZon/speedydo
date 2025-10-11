@@ -1,9 +1,9 @@
 import hexToRgba from '../../lib/tools/hexToRgba';
 
-const primary = '#1E1E1E';
+const primary = '#232323';
 const onPrimary = '#B7B7B7';
 
-const secondary = '#232323';
+const secondary = '#1E1E1E';
 const onSecondary = '#FFFFFF';
 
 const disabledBg = '#2A2A2A';
@@ -25,7 +25,7 @@ const red = '#CF0000';
 
 const redDark = '#830000';
 
-const black = '#000000';
+const black = '#0a0a0a';
 
 const white = '#FFFFFF';
 

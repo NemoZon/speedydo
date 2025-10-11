@@ -21,4 +21,4 @@ export const darkTheme = createTheme({
 export type Theme = typeof theme;
 export type ThemeColors = keyof Theme['colors'];
 export type ThemeSpacing = keyof Theme['spacing'];
-export type ThemeTextVariants = keyof Theme['textVariants'];
+export type ThemeTextVariants = Exclude<keyof Theme['textVariants'], 'defaults'>;
