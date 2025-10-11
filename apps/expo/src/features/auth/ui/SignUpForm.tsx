@@ -52,7 +52,13 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ title, onSubmit, onSwitchToSign
           placeholder="Введите пароль"
           endComponent={
             <Pressable onPress={() => setPasswordVisible((prev) => !prev)}>
-              <Text variant="label">{isPasswordVisible ? <EyeOffIcon /> : <EyeIcon />}</Text>
+              <Text variant="label">
+                {isPasswordVisible ? (
+                  <EyeOffIcon color="onSecondary50" />
+                ) : (
+                  <EyeIcon color="onSecondary50" />
+                )}
+              </Text>
             </Pressable>
           }
         />
@@ -66,7 +72,13 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ title, onSubmit, onSwitchToSign
           isInvalid={passwordsMismatch}
           endComponent={
             <Pressable onPress={() => setConfirmVisible((prev) => !prev)}>
-              <Text variant="label">{isConfirmVisible ? <EyeOffIcon /> : <EyeIcon />}</Text>
+              <Text variant="label">
+                {isConfirmVisible ? (
+                  <EyeOffIcon color="onSecondary50" />
+                ) : (
+                  <EyeIcon color="onSecondary50" />
+                )}
+              </Text>
             </Pressable>
           }
         />

@@ -53,7 +53,13 @@ const SignInForm: React.FC<SignInFormProps> = ({
           placeholder="Введите пароль"
           endComponent={
             <Pressable onPress={() => setPasswordVisible((prev) => !prev)}>
-              <Text variant="label">{isPasswordVisible ? <EyeOffIcon /> : <EyeIcon />}</Text>
+              <Text variant="label">
+                {isPasswordVisible ? (
+                  <EyeOffIcon color="onSecondary50" />
+                ) : (
+                  <EyeIcon color="onSecondary50" />
+                )}
+              </Text>
             </Pressable>
           }
         />

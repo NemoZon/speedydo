@@ -8,7 +8,7 @@ type EyeOffIconProps = {
   size?: number;
 };
 
-const EyeOffIcon = ({ color = 'onPrimary', size = 20 }: EyeOffIconProps) => {
+const EyeOffIcon = ({ color = 'onSecondary', size = 20 }: EyeOffIconProps) => {
   const theme = useTheme<Theme>();
   const iconColor = theme.colors[color];
 

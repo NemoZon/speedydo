@@ -42,8 +42,8 @@ const variantTokens: Record<
   }
 > = {
   default: {
-    baseBg: 'black',
-    pressBg: 'black30',
+    baseBg: 'primary',
+    pressBg: 'primary30',
     baseBorder: 'black',
     pressBorder: 'black30',
     text: 'white',
@@ -56,8 +56,8 @@ const variantTokens: Record<
     text: 'white',
   },
   success: {
-    baseBg: 'greenLight',
-    pressBg: 'greenLight30',
+    baseBg: 'green30',
+    pressBg: 'green30',
     baseBorder: 'greenDark',
     pressBorder: 'greenDark',
     text: 'white',
