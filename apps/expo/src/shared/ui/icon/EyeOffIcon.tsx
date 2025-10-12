@@ -1,14 +1,10 @@
 import MaterialDesignIcons from '@react-native-vector-icons/material-design-icons';
 import { useTheme } from '@shopify/restyle';
 import React from 'react';
-import { Theme, ThemeColors } from '../../config/theme/theme';
+import { Theme } from '../../config/theme/theme';
+import { IconProps } from './IconType';
 
-type EyeOffIconProps = {
-  color?: ThemeColors;
-  size?: number;
-};
-
-const EyeOffIcon = ({ color = 'onSecondary', size = 20 }: EyeOffIconProps) => {
+const EyeOffIcon = ({ color = 'onPrimary', size = 20 }: IconProps) => {
   const theme = useTheme<Theme>();
   const iconColor = theme.colors[color];
 

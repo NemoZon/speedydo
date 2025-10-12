@@ -4,18 +4,14 @@ import spacing from './spacing';
 import textVariants from './typography';
 
 export const theme = createTheme({
-  colors: colors,
-  spacing: spacing,
-  textVariants: textVariants,
+  colors,
+  spacing,
+  textVariants,
 });
 
 export const darkTheme = createTheme({
   ...theme,
-  colors: {
-    ...theme.colors,
-    background: theme.colors.black,
-    text: theme.colors.white,
-  },
+  colors: theme.colors,
 });
 
 export type Theme = typeof theme;

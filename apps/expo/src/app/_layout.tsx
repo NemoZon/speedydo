@@ -1,19 +1,28 @@
-import { darkTheme, theme } from '@/src/shared/config/theme/theme';
-import { Box } from '@/src/shared/ui/box/Box';
 import { ThemeProvider } from '@shopify/restyle';
-import { Slot } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import { useColorScheme } from 'react-native';
+import { Stack } from 'expo-router';
+import * as SplashScreen from 'expo-splash-screen';
+import { useEffect } from 'react';
+import { StatusBar, useColorScheme } from 'react-native';
+import { darkTheme, theme, useAppFonts } from '../shared/config';
 
+SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const colorScheme = useColorScheme();
+  const [fontsLoaded] = useAppFonts();
 
+  useEffect(() => {
+    if (fontsLoaded) SplashScreen.hideAsync();
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) return null;
   return (
-    <ThemeProvider theme={colorScheme === 'dark' ? darkTheme : theme}>
-      <Box backgroundColor="secondary" flex={1}>
-        <Slot />
-      </Box>
-      <StatusBar style="light" />
-    </ThemeProvider>
+    <>
+      <StatusBar />
+      <ThemeProvider theme={colorScheme === 'dark' ? darkTheme : theme}>
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="(auth)/index" />
+        </Stack>
+      </ThemeProvider>
+    </>
   );
 }

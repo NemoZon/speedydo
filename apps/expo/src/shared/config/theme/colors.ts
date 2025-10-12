@@ -22,8 +22,10 @@ const readOnlyBg = '#2A2A2A';
 const readOnlyText = '#AFAFAF';
 
 // Accents
-const accent = '#FFCC00'; // gold/yellow – ranks/badges/progress
+const accent = '#FFD900'; // gold/yellow – ranks/badges/progress
 const accentDark = '#B88900';
+
+const orange = '#ff8400';
 
 // Semantic colors
 const green = '#22C55E';
@@ -108,6 +110,8 @@ const colors = {
   black,
   black30: hexToRgba(black, 0.3),
   white,
+
+  orange,
 } as const;
 
 export default colors;
