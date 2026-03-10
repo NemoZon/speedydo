@@ -31,7 +31,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ title, onSubmit, onSwitchToSign
   return (
     <Box backgroundColor="secondary" padding="l" borderRadius={16}>
       <Box marginBottom="m">
-        <Text variant="header">{title ?? 'Создайте аккаунт'}</Text>
+        <Text variant="h1">{title ?? 'Создайте аккаунт'}</Text>
         <Text variant="body">Введите почту и придумайте надежный пароль для регистрации.</Text>
       </Box>
 

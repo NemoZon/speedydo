@@ -6,5 +6,6 @@ export { default as CrownIcon } from './icon/CrownIcon';
 export { default as EyeIcon } from './icon/EyeIcon';
 export { default as EyeOffIcon } from './icon/EyeOffIcon';
 export { default as HomeIcon } from './icon/HomeIcon';
+export { IconProps } from './icon/IconType';
 export { default as TextInput } from './input/TextInput';
 export { default as Text } from './text/Text';

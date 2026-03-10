@@ -14,7 +14,8 @@ export default function TabsLayout() {
         headerTitleAlign: 'center',
         headerStyle: {
           backgroundColor: theme.colors.primary,
-          borderBottomColor: theme.colors.primary30,
+          borderBottomColor: theme.colors.onPrimary10,
+          borderBottomWidth: 1,
         },
         headerTintColor: theme.colors.onSecondary,
         headerTitleStyle: {

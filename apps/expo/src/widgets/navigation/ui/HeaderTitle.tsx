@@ -1,8 +1,7 @@
 import { fonts, ThemeColors } from '@/src/shared/config';
-import { Box, CrownIcon, Text } from '@/src/shared/ui';
+import { Box, CrownIcon, IconProps, Text } from '@/src/shared/ui';
 import FireIcon from '@/src/shared/ui/icon/FireIcon';
 import HeartIcon from '@/src/shared/ui/icon/HeartIcon';
-import type { IconProps } from '@/src/shared/ui/icon/IconType';
 import React from 'react';
 
 type SectionType = {

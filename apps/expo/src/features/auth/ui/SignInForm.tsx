@@ -32,7 +32,7 @@ const SignInForm: React.FC<SignInFormProps> = ({
   return (
     <Box backgroundColor="secondary" padding="l" borderRadius={16}>
       <Box marginBottom="m">
-        <Text variant="header">{title ?? 'Войдите в свой аккаунт'}</Text>
+        <Text variant="h1">{title ?? 'Войдите в свой аккаунт'}</Text>
         <Text variant="body">Введите почту и пароль, чтобы авторизоваться.</Text>
       </Box>
 

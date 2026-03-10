@@ -5,7 +5,7 @@ const Account = () => {
   return (
     <>
       <Text variant="label">label</Text>
-      <Text variant="header">header</Text>
+      <Text variant="h1">header</Text>
       <Text variant="body">body</Text>
     </>
   );
